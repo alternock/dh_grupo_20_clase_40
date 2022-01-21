@@ -1,18 +1,11 @@
 const button = document.querySelector("button");
 const h2 = document.querySelector("h2");
-let userInfo;
+let userInfo = {name:"foo", age:100};
 
 
-localStorage.setItem("avatar", "monkey nft");
-
-// localStorage.getItem()
-// localStorage.removeItem();
-
-
-
-
-// button.addEventListener("click", function () {
-//   if() {
-//      localStorage.setItem("user", JSON.stringify(userInfo))
-//   }
-// })
+button.addEventListener("click", function () {
+    if (!localStorage.getItem("user")) {
+        h2.innerHTML = "el userInfo se almaceno..." 
+        localStorage.setItem("user", JSON.stringify(userInfo))
+    }
+})
