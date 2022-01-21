@@ -8,7 +8,11 @@ button.addEventListener("click", function () {
         h2.innerHTML = "el userInfo se almaceno..." 
         localStorage.setItem("user", JSON.stringify(userInfo))
     } else {
+<<<<<<< HEAD
         h2.innerHTML = "el userInfo se almaceno... y ya existe el setItem" 
+=======
+        h2.innerHTML = "el userInfo ya estaba almacenada..." 
+>>>>>>> b3d87eb00a62d289ce7f11b60b99e6ee0b852dfa
     }
 })
 
